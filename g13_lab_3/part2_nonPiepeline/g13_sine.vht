@@ -72,13 +72,13 @@ always : PROCESS
 BEGIN
 -- pi/6 => 2731
 i<="0000101010101011";
-wait for 5 * clk_period;
+wait for 3 * clk_period;
 -- pi/4 => 4096
 i<="0001000000000000";
-wait for 5 * clk_period;
+wait for 3* clk_period;
 -- pi/3 => 5461
-i<="0000010101010101";
-wait for 5 * clk_period;
+i<="0001010101010101";
+wait for 3 * clk_period;
 -- pi/2 => 8192
 i<="0010000000000000";
 wait;
