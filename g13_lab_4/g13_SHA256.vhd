@@ -145,7 +145,7 @@ begin
 							h7 <= std_logic_vector(unsigned(h7) + unsigned(H_o));
 							state <= OUTPUT;				
 					--out_data
-					when output =>
+					when OUTPUT =>
 							if read = '1' then
 								case out_count is
 
