@@ -12,4 +12,8 @@
 - Pipeline : insert registers at every operation to balance the pathway
 
 ### Lab 4 Final Implementation
+- Tools -> Qsys -> System Contents Pane appear
+- Under `Library` -> Processors and Peripherals -> Hard Process Systems -> Arria V/Cyclone V Hard Processor System
+- Under `Library` -> Basic Functions -> On Chip Memory -> On chip memory (RAM or ROM)
+- Under `Library` -> Processors and Peripherals -? PIO (Parallel I/O)
 ![image](https://github.com/user-attachments/assets/7ee65156-6afb-4ea2-b47b-9b4bdd6757fa)
