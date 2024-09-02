@@ -56,4 +56,18 @@
   - add a new custom component 
 
 #### Custom Component
+
+ Create the VHDL code for the component then opem platform designer
+   - IP -> New component -> Add
+   - Files -> select created VHDL file -> Analyze Synthesis Files
+   -  Signlas & Interfaces -> uner clock1 signal click `add interface`
+   -  select `new Clock input` -> change to clock_sink
+   -  move clock1 signal to clock_sink interface, change signal type to clk
+   -  move resetn signal to be under clock_reset, change signal type to reset_n
+   -  avlon_slave_0 -> associated clock -> clock_sink
+   -  clock_reset -> associated clock -> clock_sink
+   -  save
+   -  add the component as before, perform same connections as pushbuttons
+   -  redo the address change command
+   -  rerun the generate HDL in platform designer
 ![image](https://github.com/user-attachments/assets/7ee65156-6afb-4ea2-b47b-9b4bdd6757fa)
