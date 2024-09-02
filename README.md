@@ -12,12 +12,29 @@
 - Pipeline : insert registers at every operation to balance the pathway
 
 ### Lab 4 Final Implementation
-- Tools -> Qsys -> System Contents Pane appear
-- Under `Library` -> Processors and Peripherals -> Hard Process Systems -> Arria V/Cyclone V Hard Processor System
-- Under `Library` -> Basic Functions -> On Chip Memory -> On chip memory (RAM or ROM)
-- Under `Library` -> Processors and Peripherals -> PIO (Parallel I/O)
-- Connect `h2f_axi_master` (HPS to FPGA) to s1 uner onchip_memory2_0
-- connect s1 uner pio 0 & 1 & 2 to `h2f_lw_axi_master` (light weight HPS to FPGA)
-- connect all the components clock and reset signals to the clock componeny
-- export the design
+#### 1. Start Platform Designer
+- Navigate to **`Tools` -> `Qsys` -> `System Contents Pane`**.
+
+#### 2. Add Components
+- **Processors and Peripherals**:
+  - Go to **`Library` -> `Processors and Peripherals` -> `Hard Processor Systems`**.
+  - Select **`Arria V/Cyclone V Hard Processor System`** and add it.
+- **On Chip Memory**:
+  - Go to **`Library` -> `Basic Functions` -> `On Chip Memory`**.
+  - Add **`On chip memory (RAM or ROM)`**.
+- **PIO (Parallel I/O)**:
+  - Go to **`Library` -> `Processors and Peripherals` -> `PIO (Parallel I/O)`**.
+  - Add the required **PIO components**.
+
+#### 3. Connect Components
+- **Memory Connections**:
+  - Connect **`h2f_axi_master`** (HPS to FPGA) to **`s1`** under **`onchip_memory2_0`**.
+- **PIO Connections**:
+  - Connect **`s1`** under **`pio 0`**, **`pio 1`**, and **`pio 2`** to **`h2f_lw_axi_master`** (Light Weight HPS to FPGA).
+- **Clock and Reset Signals**:
+  - Connect all components' clock and reset signals to the **`clock` component**.
+
+#### 4. Export the Design
+- Ensure all connections are correctly set.
+- Export the design for further processing.
 ![image](https://github.com/user-attachments/assets/7ee65156-6afb-4ea2-b47b-9b4bdd6757fa)
